@@ -7,6 +7,8 @@
     "server": "cd server && npm start",
     "client": "cd client && npm start",
     "start": "concurrently \"npm run server\" \"npm run client\"",
+    "normal_client": "cd client && npm run normal_start",
+    "normal_start": "concurrently \"npm run server\" \"npm run normal_client\"",
     "stop": "taskkill -F -IM node.exe",
     "build": "cd client && npm run build --output ./client/build",
     "serverInstall": "cd server && npm install",
